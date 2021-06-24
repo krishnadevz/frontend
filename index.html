@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Challenge</title>
+    <link rel="preload" as="font" type="font/woff2" href="./fecc-001-assets/fecc-#001/webfont/Inter-Black.woff2" />
+    <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="[ signup ] [ flow ]">
+      <h1 class="signup__heading">Sign up for the latest updates</h1>
+      <form id="signupForm" action="/" class="[ signup__form ] [ flow ]" method="POST">
+        <label for="email">Email address</label>
+        <div class="inline-field-control">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            autocomplete="off"
+            autocapitalize="none"
+            autocorrect="off"
+            required
+            pattern="[^@]+@[^\.]+\..+"
+          />
+          <button class="button">
+            <span class="visually-hidden">Submit email</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              focusable="false"
+              width="1em"
+              height="1em"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M11.293 5.707L16.586 11H5a1 1 0 000 2h11.586l-5.293 5.293a.999.999 0 101.414 1.414l7-7a1.006 1.006 0 000-1.414l-7-7a.999.999 0 10-1.414 1.414z"
+              />
+            </svg>
+          </button>
+        </div>
+      </form>
+      <div aria-atomic="true" role="alert" class="signup__alert"></div>
+    </main>
+    <script type="module" src="./js/index.js" async defer></script>
+  </body>
+</html>
